@@ -1,0 +1,17 @@
+{
+    "ssl": {
+        "key": "/var/www/ssl/privkey.pem",
+        "cert": "/var/www/ssl/fullchain.pem"
+    },
+    "httpPort": 3000,
+    "httpRoute": "/",
+    "httpDir": "/var/www/html",
+    "httpFile": "index.html",
+    "appRoute": "/apps/",
+    "appDir": "/var/www/apps",
+    "appFile": "Index.js"
+}
+
+
+
+
