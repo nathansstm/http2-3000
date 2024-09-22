@@ -1,7 +1,7 @@
 {
     "ssl": {
-        "key": "/var/www/ssl/privkey.pem",
-        "cert": "/var/www/ssl/fullchain.pem"
+        "key": "ssl/privkey.pem",
+        "cert": "ssl/fullchain.pem"
     },
     "httpPort": 3000,
     "httpRoute": "/",
