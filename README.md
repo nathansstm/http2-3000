@@ -36,7 +36,7 @@ After cloning the repository, you can use the HTTP/2 server as follows:
 
 4. **Running in the Background**:  
    To run the server in the background and return to the command line, you can use:  
-   'node server.js & disown'
+   'nohup node server.js &'
 
    This allows the server to keep running even after closing the terminal.
 

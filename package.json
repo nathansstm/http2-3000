@@ -4,8 +4,8 @@
   "description": "A Node.js HTTP/2 server application running on port 3000.",
   "main": "server.js",
   "scripts": {
-    "start": "node server.js & disown",
-    "test": "node server-test.js & disown"
+    "start": "nohup node server.js &",
+    "test": "nohup node server-test.js &"
   },
   "keywords": [],
   "author": "Nathaniel",
