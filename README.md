@@ -12,7 +12,7 @@ This project sets up a simple HTTP/2 server using Node.js with SSL/TLS for secur
 
 ## Prerequisites
 - Node.js (v14 or later)
-- SSL certificate files ('privkey.pem' and 'fullchain.pem') stored in '/var/www/ssl/'
+- SSL certificate files ('privkey.pem' and 'fullchain.pem') stored in 'ssl/'
 - Git
 
 ## Usage
