@@ -2,14 +2,17 @@ const http2 = require('http2');
 const fs = require('fs');
 const path = require('path');
 
-// Load configuration from server.json
-const config = JSON.parse(fs.readFileSync('server.json', 'utf8'));
+// Load configuration from server.json using __dirname for the path
+const configPath = path.join(__dirname, 'server.json');
+const config = JSON.parse(fs.readFileSync(configPath, 'utf8'));
 
-// Paths to your SSL certificate and key
+// Paths to your SSL certificate and key using paths from config
 const sslOptions = {
-    key: fs.readFileSync(config.ssl.key),
-    cert: fs.readFileSync(config.ssl.cert)
+    key: fs.readFileSync(path.join(__dirname, config.ssl.key)),
+    cert: fs.readFileSync(path.join(__dirname, config.ssl.cert))
 };
+
+// You can now use sslOptions for your HTTP2 server setup
 
 const HTTP_PORT = config.httpPort; // Use configured port
 

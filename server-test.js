@@ -1,10 +1,11 @@
 const http2 = require('http2');
 const fs = require('fs');
+const path = require('path');
 
 // Paths to your SSL certificate and key
 const sslOptions = {
-    key: fs.readFileSync('/app/path/ssl/privkey.pem'),
-    cert: fs.readFileSync('/app/path/ssl/fullchain.pem')
+    key: fs.readFileSync(path.join(__dirname, 'ssl/privkey.pem')),
+    cert: fs.readFileSync(path.join(__dirname, 'ssl/fullchain.pem'))
 };
 
 const HTTP_PORT = 3000; // Standard HTTPS port
