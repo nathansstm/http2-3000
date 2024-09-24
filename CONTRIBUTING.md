@@ -35,7 +35,7 @@ By participating in this project, you agree to abide by the [Code of Conduct](CO
 
 ## Reporting Issues
 
-If you find a bug or have a suggestion for improvement, please create an issue on the [GitHub Issues page](https://github.com/YOUR-USERNAME/server-3001/issues).
+If you find a bug or have a suggestion for improvement, please create an issue on the [GitHub Issues page](https://github.com/YOUR-USERNAME/http2-3000/issues).
 
 Thank you for your contributions!
 
